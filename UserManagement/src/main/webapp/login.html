@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+background: #C2DBFA;
+background: linear-gradient(to right, #C2DBFA 0%, #3753AA 100%);
+}
+
+
+
+.container{
+border:1px solid white;
+border-radius:6px;
+background-color:white;
+box-shadow: 0 0 20px;
+height:350px;
+width:350px;
+
+}
+
+input[type=text], input[type=password] {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 300px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+label[for=uname], label[for=psw]{
+padding-right: 220px;
+
+}
+
+</style>
+</head>
+<body>
+<center>
+<h1>Login Form</h1>
+<form action="LoginCode" method="post">
+<div class="container">
+      <label for="uname"><b>Username</b></label><br>
+      <input type="text" placeholder="Enter Username" name="uname"><br>
+
+      <label for="psw"><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="psw"><br>
+        
+      <button type="submit">Login</button>
+      </div>
+      </div>
+</form>
+</center>
+</body>
+</html>

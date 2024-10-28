@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration page</title>
+<style>
+body{
+font-family:arial;
+background: #C2DBFA;
+background: linear-gradient(to right, #C2DBFA 0%, #3753AA 100%);}
+.container{
+border:1px solid white;
+border-radius:6px;
+background-color:white;
+box-shadow: 0 0 10px;
+height:450px;
+width:400px;
+}
+input[type=text], input[type=password], input[type=email], input[type=number]{
+  width: 250px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+   background-color: green;
+  color: white;
+  padding:15px 20px;
+  margin: 15px;
+  border: none;
+  cursor: pointer;
+  width:70px;
+  
+  
+}
+
+button:hover {
+  opacity: 0.8;
+}
+</style>
+</head>
+<body>
+<center>
+<h1>USER REGISTRATION PAGE</h1>
+<form action="Register" method="post">
+<div class="container">
+<table boarder="1">
+<tr>
+<td>Name:</td>
+<td><input type="text" name="uname"><p></p>
+</td></tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="password" name="psw"><p></p>
+</td></tr>
+
+<tr>
+<td>Email:</td>
+<td><input type="email" name="email"><p></p>
+</td></tr>
+<tr>
+<td>Gender:</td>
+<td><input type="radio" value="male" name="Gender">Male
+<input type="radio" value="female" name="Gender">Female
+</td>
+</tr>
+
+<tr>
+<td>MobileNo</td>
+<td><input type="number" name="mobileno">
+</td>
+</tr>
+
+<tr>
+<td>Address:</td>
+<td><input type="text"  name="adrs">
+</td>
+</tr>
+</table>
+<button type="submit">submit</button>
+<button type="reset">reset</button>
+</div>
+</form>
+</center>
+</body>
+</html>
